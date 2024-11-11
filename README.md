@@ -58,11 +58,11 @@ This repository contains an object detection model trained to handle a variety o
 
 ### 13. **Rain** (Result: 0.78)
 - **Inference**: The model misclassifies it as a truck.
-- **Suggestions**: Increase rain intensity or layer with other effects like fog to challenge the model further. You could also train the model with rain added to the training data to improve performance in rainy conditions.
+- **Suggestions**: Increase rain intensity or layer with other effects like fog to challenge the model further. You could also train the model with rain added to the training data to improve performance in rainy conditions. Synthetic weather conditions can be generated using image processing or generative adversarial networks (GANs) to simulate different weather patterns.
 
 ### 14. **Snow** (No Prediction)
 - **Inference**: No predictions were made in snowy conditions, likely due to reduced visibility or contrast.
-- **Suggestions**: Train the model with synthetic snow added to the training set. Try different snow effects or intensities to help the model learn to recognize objects in snowy environments.
+- **Suggestions**: Train the model with synthetic snow added to the training set. Try different snow effects or intensities to help the model learn to recognize objects in snowy environments. Synthetic weather conditions can be generated using image processing or generative adversarial networks (GANs) to simulate different weather patterns.
 
 ### 15. **Reflective Surface** (Result: Car: 0.93, Truck: 0.66)
 - **Inference**: The model performs well with one part of the car on reflective surfaces, but misclassifies the other part as truck, likely due to size or shape differences.
@@ -82,6 +82,9 @@ This repository contains an object detection model trained to handle a variety o
 - **Cross-Validation**: Implement cross-validation with edge cases during training to ensure the model generalizes well across different unseen conditions.
 
 ---
+## Note 
+The synthetic data functions, such as GANs for data generation, can be computationally intensive. Ensure you have the necessary resources for training GANs if you plan to use them in your projects.
 
 ## Conclusion
 This object detection model has shown solid performance across several edge cases, with some room for improvement in certain areas. By implementing the suggestions above, we can continue to enhance the model's robustness and accuracy in real-world, diverse environments.
+
