@@ -52,7 +52,7 @@ This repository contains an object detection model trained to handle a variety o
 - **Inference**: Cluttered backgrounds significantly impact detection, suggesting the model is focusing on background noise rather than the objects.
 - **Suggestions**: Augment training with highly cluttered backgrounds. Also, consider using foreground-background segmentation or saliency detection techniques to focus on the objects.
 
-### 12. **Multiple Objects in Close Proximity** (Result: 0.66 for both right and above, original car with 0.84)
+### 12. **Multiple Objects in Close Proximity** (Result: 'Above' car with 0.82 and original car with 0.87, 'Right' car with 0.66 and original car with 0.84)
 - **Inference**: The model detects multiple objects in close proximity with some difficulty, but it can handle simple cases.
 - **Suggestions**: Add more objects in close proximity or partially overlapping to stress-test the model further. Instance segmentation techniques can also help separate objects in such scenarios.
 
