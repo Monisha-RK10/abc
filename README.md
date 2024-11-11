@@ -75,12 +75,6 @@ This repository contains an object detection model trained to handle a variety o
 ---
 
 ## General Suggestions for Improvement:
-- **Augment with More Edge Cases**: While the model performs well in many edge cases, further training with extreme versions of these cases (e.g., extreme rotation, occlusion, and background clutter) can help improve robustness.
-- **Improve Data Quality**: Adding more diverse real-world images (e.g., snowy, rainy, or cluttered scenes) to your training set will help improve generalization to unseen conditions.
-- **Advanced Architectures**: Consider exploring more advanced architectures like **multi-scale networks**, **attention mechanisms**, or **instance segmentation** to improve the model's ability to detect and separate objects, especially in challenging cases like occlusion or multiple objects.
-- **Fine-Tune Hyperparameters**: Experiment with fine-tuning the learning rate, batch size, or optimizer settings to improve performance, especially in challenging edge cases.
-- **Cross-Validation**: Implement cross-validation with edge cases during training to ensure the model generalizes well across different unseen conditions.
-
 - **Data Augmentation** : Increase dataset diversity by augmenting with additional edge cases, such as extreme scale variations, rotations, and occlusions, to further improve model robustness.
 - **Improve Data Quality**: Adding more diverse real-world images (e.g., snowy, rainy, or cluttered scenes) to your training set will help improve generalization to unseen conditions.
 - **Hyperparameter Tuning**: Fine-tune parameters such as IoU thresholds and confidence scores, and experiment with learning rate, batch size, or optimizer settings to boost performance across challenging cases.
