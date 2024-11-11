@@ -32,12 +32,12 @@ This repository contains an object detection model trained to handle a variety o
 ### 7. **Small Objects** (Result: 0.81)
 - **Inference**: The model struggles with small objects, especially when downscaled. 
   - **Note**: The small car at scale 0.1 of the original image was not detected.
-- **Suggestions**: Focus training on small objects and try techniques like super-resolution or multi-scale detection to improve detection at small scales.
+- **Suggestions**: Focus training on small objects and try techniques like super-resolution or multi-scale detection to improve detection at small scales. Other architectures designed for small object detection such as (a) YOLOv8’s smaller scale layers or (b) Faster R-CNN with Feature Pyramid Networks (FPN)
 
 ### 8. **Scale Objects** (Result: 0.74)
-- **Inference**: The model mispredicted a truck when scaling objects at scales [0.1, 0.2, 0.8, 1.2], and failed to detect other cars.
+- **Inference**: The model mispredicted the car as a truck when scaling objects at scales [0.1, 0.2, 0.8, 1.2], and failed to detect other cars.
   - **Note**: Predicted truck (wrong) with 0.74 confidence and did not predict other cars.
-- **Suggestions**: Test with more extreme scale variations and augment the dataset with objects at different scales to help the model generalize across various sizes.
+- **Suggestions**: Test with more extreme scale variations and augment the dataset with objects at different scales to help the model generalize across various sizes. Apply post-processing adjustments for missed detections (scale variations), adjust NMS thresholds.
 
 ### 9. **Aspect Ratio** (Result: 0.65)
 - **Inference**: The model’s performance dropped when handling objects with unusual aspect ratios.
