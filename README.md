@@ -45,7 +45,7 @@ This repository contains an object detection model trained to handle a variety o
 
 ### 10. **Object Deformation** (Result: 0.54)
 - **Inference**: Object deformation (e.g., stretching or squishing) significantly affects performance.
-- - **Note**: Predicted airplane (wrong) with 0.54 confidence.
+- - **Note**: Predicted 2 airplanes (wrong) with 0.54 and 0.52 confidence.
 - **Suggestions**: Deformations are challenging for object detection. Consider using advanced methods like deformable convolutions or shape-based models to handle such cases better.
 
 ### 11. **Background Clutter** (Result: 0.56)
